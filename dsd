@@ -1,0 +1,47 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Ark = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Submit = Instance.new("TextButton")
+local imput = Instance.new("TextBox")
+
+--Properties:
+
+Ark.Name = "Ark"
+Ark.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Ark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = Ark
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.375193805, 0, 0.261349708, 0)
+main.Size = UDim2.new(0, 263, 0, 133)
+
+Submit.Name = "Submit"
+Submit.Parent = main
+Submit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Submit.Position = UDim2.new(0.117870726, 0, 0.624060154, 0)
+Submit.Size = UDim2.new(0, 200, 0, 50)
+Submit.Font = Enum.Font.SourceSans
+Submit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Submit.TextSize = 14.000
+.MouseButton1Down:connect(function()
+	if [Name].Text == "Ark2022" then
+		main.Visible = false
+		
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/Not69X69/Something-Cool/main/Op'))()
+	end
+end)
+
+imput.Name = "imput"
+imput.Parent = main
+imput.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+imput.Position = UDim2.new(0.117870726, 0, 0, 0)
+imput.Size = UDim2.new(0, 200, 0, 50)
+imput.Font = Enum.Font.SourceSans
+imput.Text = ""
+imput.TextColor3 = Color3.fromRGB(0, 0, 0)
+imput.TextSize = 14.000
